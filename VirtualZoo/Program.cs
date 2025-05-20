@@ -11,17 +11,24 @@ namespace VirtualZoo
         static void Main(string[] args)
         {
 <<<<<<< HEAD
+            
+=======
+<<<<<<< HEAD
            
+>>>>>>> 0ba0b42c70710c10003ee965478d097aa0e9a76b
 
 
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 
+<<<<<<< HEAD
+=======
 =======
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 
 >>>>>>> 8ba23d26d941eebf5a3c4da11fe369ab727a2d5d
+>>>>>>> 0ba0b42c70710c10003ee965478d097aa0e9a76b
             //while (true)
             //{
             //    Console.Clear();
