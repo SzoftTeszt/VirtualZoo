@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace VirtualZoo.Models
 {
-    public class Cat
+    public class Cat : Animal
     {
+        public Cat(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        {
+        }
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} nyávog: Nyávog!");
+        }
     }
 }
