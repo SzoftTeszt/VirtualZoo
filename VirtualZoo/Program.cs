@@ -10,34 +10,37 @@ namespace VirtualZoo
 
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            ConsoleKeyInfo input = new ConsoleKeyInfo();
+            
 
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("\n--- VIRTUÁLIS ÁLLATKERT MENÜ ---\n");
-                Console.WriteLine("1 - Új állat hozzáadása");
-                Console.WriteLine("2 - Állatok listázása");
-                Console.WriteLine("3 - Állatok listázása zónánként");
-                Console.WriteLine("4 - Állat etetése");
-                Console.WriteLine("5 - Állat mozgatása");
-                Console.WriteLine("6 - Állat törlése");
-                Console.WriteLine("0 - Kilépés\n");
+
+            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //ConsoleKeyInfo input = new ConsoleKeyInfo();
+
+            //while (true)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine("\n--- VIRTUÁLIS ÁLLATKERT MENÜ ---\n");
+            //    Console.WriteLine("1 - Új állat hozzáadása");
+            //    Console.WriteLine("2 - Állatok listázása");
+            //    Console.WriteLine("3 - Állatok listázása zónánként");
+            //    Console.WriteLine("4 - Állat etetése");
+            //    Console.WriteLine("5 - Állat mozgatása");
+            //    Console.WriteLine("6 - Állat törlése");
+            //    Console.WriteLine("0 - Kilépés\n");
   
-                switch (input.KeyChar)
-                {
-                    case '1': AddAnimal(); break;
-                    case '2': ListAnimals(); break;
-                    case '3': ListByZone(); break;
-                    case '4': FeedAnimal(); break;
-                    case '5': MoveAnimal(); break;
-                    case '6': RemoveAnimal(); break;
-                    case '0': return;
-                    default:  break;
-                }
-                input = Console.ReadKey(true);
-            }
+            //    switch (input.KeyChar)
+            //    {
+            //        case '1': AddAnimal(); break;
+            //        case '2': ListAnimals(); break;
+            //        case '3': ListByZone(); break;
+            //        case '4': FeedAnimal(); break;
+            //        case '5': MoveAnimal(); break;
+            //        case '6': RemoveAnimal(); break;
+            //        case '0': return;
+            //        default:  break;
+            //    }
+            //    input = Console.ReadKey(true);
+            //}
         }
 
         static void AddAnimal()
