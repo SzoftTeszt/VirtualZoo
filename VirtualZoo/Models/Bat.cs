@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace VirtualZoo.Models
 {
-    public class Bat
+    public class Bat 
     {
+        
     }
 }
