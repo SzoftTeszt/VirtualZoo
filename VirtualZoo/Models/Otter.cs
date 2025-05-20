@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace VirtualZoo.Models
 {
-    internal class Otter
+    public class Otter : Animal
     {
+        public Otter(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        {
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} nyekereg: Nyek-Nyeeek!");
+        }
     }
 }
