@@ -14,15 +14,24 @@ namespace VirtualZoo
 
             Console.WriteLine(denever);
 
+            var eger = new Eger("Ernő", 5, "Kamra");
+            Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
+            Console.WriteLine(eger);
+
+
             var hangya = new Hangya("Eri", 4, "Homok");
             Console.WriteLine(hangya);
 
             Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
 
+            var delfin = new Delfin("Dodi", 1, "ViziVilág");
+            Console.WriteLine(delfin);
+            Console.WriteLine(delfin.Age < 2 ? "Állatkerti medence" : "Még mehet a tengerbe");
 
             var vidra = new Otter("Áspis", 2, "Tavak");
             Console.WriteLine(vidra);
             Console.WriteLine(vidra.Age > 2 ? "Selyem bubó!" : "Nyammogi!");
+
 
 
 
