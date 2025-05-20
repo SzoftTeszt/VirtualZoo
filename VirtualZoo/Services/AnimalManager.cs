@@ -17,7 +17,7 @@ namespace VirtualZoo.Services
         public void FeedAnimal(string name) { }
         public void MoveAnimal(string name, string newZone) { }
         public Animal GetAnimalByName(string name) {
-            return new Eger("Ernő", 5, "Kamra");
+            return animals.FirstOrDefault(a => a.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         }
         public List<Animal> GetAllAnimals() {
             return animals;
