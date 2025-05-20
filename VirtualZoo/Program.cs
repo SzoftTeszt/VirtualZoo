@@ -13,6 +13,8 @@ namespace VirtualZoo
             var denever = new Bat("Rezső", 5, "Barlang");
             Console.WriteLine(denever);
             Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
+            var delfin = new Delfin("Dodi", 1, "ViziVilág");
+            Console.WriteLine(Delfin.Age < 2 ? "Állatkerti medence" : "Még mehet a tengerbe");
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 
