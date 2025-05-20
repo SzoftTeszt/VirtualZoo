@@ -11,7 +11,7 @@ namespace VirtualZoo.Models
     
     public class Delfin : Animal //örököl minden animátort 
     {
-        public Delfin(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        public Delfin(string name, int age, string zoneName) : base(name, age, "Delfin", zoneName)
         {
         }
 
