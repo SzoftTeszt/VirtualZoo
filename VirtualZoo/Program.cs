@@ -83,7 +83,7 @@ namespace VirtualZoo
             Console.Write("Zóna neve: ");
             var zone = Console.ReadLine();
 
-            Console.WriteLine("Faj kiválasztása: [tiger / szisza / hangya]");
+            Console.WriteLine("Faj kiválasztása: [tiger / szisza / hangya / bat]");
             var species = Console.ReadLine()?.ToLower();
 
             Animal animal = species switch
@@ -91,6 +91,7 @@ namespace VirtualZoo
                 "tiger" => new Tiger(name, age, zone),
                 "szisza" => new Cat(name, age, zone),
                 "hangya" => new Hangya(name, age, zone),
+                "bat" => new Bat(name, age, zone),
                 _ => null
             };
 

@@ -30,7 +30,7 @@ namespace VirtualZoo.Services
         }
         public List<Animal> GetAnimalsByZone(string zoneName) {
         
-            return animals.Where(x=>x.ZoneName.Equals(zoneName)).ToList();
+            return animals.Where(x=>x.ZoneName.Equals(zoneName, StringComparison.OrdinalIgnoreCase)).ToList();
         }
         public void RemoveAnimal(string name) {
             var animal = this.GetAnimalByName(name);
