@@ -9,7 +9,8 @@ namespace VirtualZoo.Models
 
     public class Bat : Animal
     {
-        public Bat(string name, int age, string zoneName) : base(name, age, "Denevér", zoneName)
+        public Bat(string name, int age, string zoneName) 
+            : base(name, age, "Denevér", zoneName)
         {
         }
 

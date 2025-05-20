@@ -19,9 +19,6 @@ namespace VirtualZoo
 
             Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
 
-            Console.WriteLine("Itt ütközés lesz :'(");
-
-
 
             var vidra = new Otter("Áspis", 2, "Tavak");
             Console.WriteLine(vidra);
