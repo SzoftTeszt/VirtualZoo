@@ -11,10 +11,30 @@ namespace VirtualZoo
         static void Main(string[] args)
         {
             var denever = new Bat("Rezső", 5, "Barlang");
+
             Console.WriteLine(denever);
+<<<<<<< HEAD
             var eger = new Eger("Ernő", 5, "Kamra");
             Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
             Console.WriteLine(eger);
+=======
+
+            var hangya = new Hangya("Eri", 4, "Homok");
+            Console.WriteLine(hangya);
+
+            Console.WriteLine(denever.Age>4?"Vén dög!":"Kis pocok!");
+
+            Console.WriteLine("Itt ütközés lesz :'(");
+
+
+
+            var vidra = new Otter("Áspis", 2, "Tavak");
+            Console.WriteLine(vidra);
+            Console.WriteLine(vidra.Age > 2 ? "Selyem bubó!" : "Nyammogi!");
+
+
+
+>>>>>>> fff85f694826c84bca7369cfed10cd05aa7e870c
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 

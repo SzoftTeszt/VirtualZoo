@@ -8,7 +8,7 @@ namespace VirtualZoo.Models
 {
     public class Eger : Animal
     {
-        public Eger(string name, int age, string species, string zoneName) : base(name, age, "Eger", zoneName)
+        public Eger(string name, int age,  string zoneName) : base(name, age, "Eger", zoneName)
         {
         }
 
