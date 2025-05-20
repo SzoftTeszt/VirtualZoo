@@ -8,7 +8,7 @@ namespace VirtualZoo.Models
 {
     public class Tiger : Animal
     {
-        public Tiger(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        public Tiger(string name, int age, string zoneName) : base(name, age, "tiger", zoneName)
         {
         }
 
