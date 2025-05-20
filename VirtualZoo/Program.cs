@@ -118,43 +118,43 @@ namespace VirtualZoo
 
         static void ListByZone()
         {
-            //Console.Write("Zóna neve: ");
-            //var zone = Console.ReadLine();
-            //var animals = manager.GetAnimalsByZone(zone);
+            Console.Write("Zóna neve: ");
+            var zone = Console.ReadLine();
+            var animals = manager.GetAnimalsByZone(zone);
 
-            //if (animals.Count == 0)
-            //{
-            //    Console.WriteLine("Nincs állat ebben a zónában.");
-            //    return;
-            //}
+            if (animals.Count == 0)
+            {
+                Console.WriteLine("Nincs állat ebben a zónában.");
+                return;
+            }
 
-            //foreach (var a in animals)
-            //    Console.WriteLine(a);
+            foreach (var a in animals)
+                Console.WriteLine(a);
         }
 
         static void FeedAnimal()
         {
-            //Console.Write("Állat neve: ");
-            //var name = Console.ReadLine();
-            //manager.FeedAnimal(name);
+            Console.Write("Állat neve: ");
+            var name = Console.ReadLine();
+            manager.FeedAnimal(name);
         }
 
         static void MoveAnimal()
         {
-            //Console.Write("Állat neve: ");
-            //var name = Console.ReadLine();
+            Console.Write("Állat neve: ");
+            var name = Console.ReadLine();
 
-            //Console.Write("Új zóna neve: ");
-            //var newZone = Console.ReadLine();
+            Console.Write("Új zóna neve: ");
+            var newZone = Console.ReadLine();
 
-            //manager.MoveAnimal(name, newZone);
+            manager.MoveAnimal(name, newZone);
         }
 
         static void RemoveAnimal()
         {
-            //Console.Write("Állat neve: ");
-            //var name = Console.ReadLine();
-            //manager.RemoveAnimal(name);
+            Console.Write("Állat neve: ");
+            var name = Console.ReadLine();
+            manager.RemoveAnimal(name);
         }
     }
 }

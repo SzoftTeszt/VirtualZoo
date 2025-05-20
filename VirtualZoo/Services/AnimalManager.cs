@@ -14,8 +14,14 @@ namespace VirtualZoo.Services
             animals.Add(animal);
         }
 
-        public void FeedAnimal(string name) { }
-        public void MoveAnimal(string name, string newZone) { }
+        public void FeedAnimal(string name) {
+            var animal = this.GetAnimalByName(name);
+            animal.Feed();
+        }
+        public void MoveAnimal(string name, string newZone) {
+            var animal = this.GetAnimalByName(name);
+            animal.ZoneName = newZone;
+        }
         public Animal GetAnimalByName(string name) {
             return animals.FirstOrDefault(a => a.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         }
@@ -24,9 +30,12 @@ namespace VirtualZoo.Services
         }
         public List<Animal> GetAnimalsByZone(string zoneName) {
         
-            return new List<Animal>();
+            return animals.Where(x=>x.ZoneName.Equals(zoneName)).ToList();
         }
-        public void RemoveAnimal(string name) { }
+        public void RemoveAnimal(string name) {
+            var animal = this.GetAnimalByName(name);
+            animals.Remove(animal);
+        }
 
     }
 }
