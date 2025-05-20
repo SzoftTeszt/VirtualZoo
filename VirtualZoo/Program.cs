@@ -12,6 +12,8 @@ namespace VirtualZoo
         {
             var denever = new Bat("Rezső", 5, "Barlang");
             Console.WriteLine(denever);
+            var eger = new Eger("Ernő", 5, "Kamra");
+            Console.WriteLine(eger);
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 
@@ -30,7 +32,7 @@ namespace VirtualZoo
             //    Console.WriteLine("5 - Állat mozgatása");
             //    Console.WriteLine("6 - Állat törlése");
             //    Console.WriteLine("0 - Kilépés\n");
-  
+
             //    switch (input.KeyChar)
             //    {
             //        case '1': AddAnimal(); break;
