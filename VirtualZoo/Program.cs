@@ -6,7 +6,7 @@ namespace VirtualZoo
 {
     class Program
     {
-        static IAnimalManager manager = new AnimalManager();
+        //static IAnimalManager manager = new AnimalManager();
 
         static void Main(string[] args)
         {
@@ -42,91 +42,91 @@ namespace VirtualZoo
 
         static void AddAnimal()
         {
-            Console.Write("Állat neve: ");
-            var name = Console.ReadLine();
+            //Console.Write("Állat neve: ");
+            //var name = Console.ReadLine();
 
-            Console.Write("Kora (év): ");
-            if (!int.TryParse(Console.ReadLine(), out int age))
-            {
-                Console.WriteLine("Érvénytelen kor.");
-                return;
-            }
+            //Console.Write("Kora (év): ");
+            //if (!int.TryParse(Console.ReadLine(), out int age))
+            //{
+            //    Console.WriteLine("Érvénytelen kor.");
+            //    return;
+            //}
 
-            Console.Write("Zóna neve: ");
-            var zone = Console.ReadLine();
+            //Console.Write("Zóna neve: ");
+            //var zone = Console.ReadLine();
 
-            Console.WriteLine("Faj kiválasztása: [lion / elephant / penguin]");
-            var species = Console.ReadLine()?.ToLower();
+            //Console.WriteLine("Faj kiválasztása: [lion / elephant / penguin]");
+            //var species = Console.ReadLine()?.ToLower();
 
-            Animal animal = species switch
-            {
-                "lion" => new Lion(name, age, zone),
-                "elephant" => new Elephant(name, age, zone),
-                "penguin" => new Penguin(name, age, zone),
-                _ => null
-            };
+            //Animal animal = species switch
+            //{
+            //    "lion" => new Lion(name, age, zone),
+            //    "elephant" => new Elephant(name, age, zone),
+            //    "penguin" => new Penguin(name, age, zone),
+            //    _ => null
+            //};
 
-            if (animal == null)
-            {
-                Console.WriteLine("Ismeretlen faj.");
-                return;
-            }
+            //if (animal == null)
+            //{
+            //    Console.WriteLine("Ismeretlen faj.");
+            //    return;
+            //}
 
-            manager.AddAnimal(animal);
+            //manager.AddAnimal(animal);
         }
 
         static void ListAnimals()
         {
-            var animals = manager.GetAllAnimals();
-            if (animals.Count == 0)
-            {
-                Console.WriteLine("Nincsenek állatok.");
-                return;
-            }
+            //var animals = manager.GetAllAnimals();
+            //if (animals.Count == 0)
+            //{
+            //    Console.WriteLine("Nincsenek állatok.");
+            //    return;
+            //}
 
-            foreach (var a in animals)
-                Console.WriteLine(a);
+            //foreach (var a in animals)
+            //    Console.WriteLine(a);
         }
 
         static void ListByZone()
         {
-            Console.Write("Zóna neve: ");
-            var zone = Console.ReadLine();
-            var animals = manager.GetAnimalsByZone(zone);
+            //Console.Write("Zóna neve: ");
+            //var zone = Console.ReadLine();
+            //var animals = manager.GetAnimalsByZone(zone);
 
-            if (animals.Count == 0)
-            {
-                Console.WriteLine("Nincs állat ebben a zónában.");
-                return;
-            }
+            //if (animals.Count == 0)
+            //{
+            //    Console.WriteLine("Nincs állat ebben a zónában.");
+            //    return;
+            //}
 
-            foreach (var a in animals)
-                Console.WriteLine(a);
+            //foreach (var a in animals)
+            //    Console.WriteLine(a);
         }
 
         static void FeedAnimal()
         {
-            Console.Write("Állat neve: ");
-            var name = Console.ReadLine();
-            manager.FeedAnimal(name);
+            //Console.Write("Állat neve: ");
+            //var name = Console.ReadLine();
+            //manager.FeedAnimal(name);
         }
 
         static void MoveAnimal()
         {
-            Console.Write("Állat neve: ");
-            var name = Console.ReadLine();
+            //Console.Write("Állat neve: ");
+            //var name = Console.ReadLine();
 
-            Console.Write("Új zóna neve: ");
-            var newZone = Console.ReadLine();
+            //Console.Write("Új zóna neve: ");
+            //var newZone = Console.ReadLine();
 
-            manager.MoveAnimal(name, newZone);
+            //manager.MoveAnimal(name, newZone);
         }
 
         static void RemoveAnimal()
         {
-            Console.Write("Állat neve: ");
-            var name = Console.ReadLine();
-            manager.RemoveAnimal(name);
+            //Console.Write("Állat neve: ");
+            //var name = Console.ReadLine();
+            //manager.RemoveAnimal(name);
         }
     }
 }
