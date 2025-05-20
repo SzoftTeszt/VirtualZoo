@@ -32,7 +32,9 @@ namespace VirtualZoo
             Console.WriteLine(vidra);
             Console.WriteLine(vidra.Age > 2 ? "Selyem bubó!" : "Nyammogi!");
 
-
+            var cica = new Cat("Jockey", 4, "Kert");
+            Console.WriteLine(cica);
+            Console.WriteLine(cica.Age > 4 ? "Kandúrbandi!" : "Suhanc!");
 
 
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
