@@ -8,7 +8,7 @@ namespace VirtualZoo.Models
 {
     public class Cat : Animal
     {
-        public Cat(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        public Cat(string name, int age, string zoneName) : base(name, age, "Szisza", zoneName)
         {
         }
         public override void MakeSound()
