@@ -11,7 +11,10 @@ namespace VirtualZoo
         static void Main(string[] args)
         {
             var denever = new Bat("Rezső", 5, "Barlang");
+
             Console.WriteLine(denever);
+            var hangya = new Hangya("Eri", 4, "Homok");
+            Console.WriteLine(hangya);
             //Console.OutputEncoding = System.Text.Encoding.UTF8;
             //ConsoleKeyInfo input = new ConsoleKeyInfo();
 

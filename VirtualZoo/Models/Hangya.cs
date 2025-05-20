@@ -10,7 +10,7 @@ namespace VirtualZoo.Models
 
     {
 
-        public Hangya(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        public Hangya(string name, int age, string zoneName) : base(name, age, "Hangya", zoneName)
         {
         }
 
