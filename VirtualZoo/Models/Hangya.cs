@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace VirtualZoo.Models
 {
-    internal class hangya
+    public class Hangya : Animal
+
     {
+
+        public Hangya(string name, int age, string species, string zoneName) : base(name, age, species, zoneName)
+        {
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine($"{Name} nyammog: Nyamm-nyam!");
+        }
     }
 }
